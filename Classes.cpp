@@ -6,7 +6,7 @@
     class <ClassName>{
             //Body of the class
 
-        //Data Member are variables defined within rhe class.
+        //Data Member are variables defined within rhe class.(Atributes)
         //Methods - Functions defined within the class.
 
         Block of code1; //This could be our data members
@@ -25,7 +25,9 @@ class Person{
         std::string first;
         std::string last;
 
-        void FirstLast();
+        void FirstLast(){
+            std::cout << first << " " << last ;
+        };
 
 };
 
@@ -35,15 +37,16 @@ int main(){
 
     p.first = "Sandile"; // To access the class we use p.<identifier>
     p.last = "Mashaba";
+    p.FirstLast();
+    std::cout << '\n';
 
     Person p2;
 
     p2.first = "Allie";
     p2.last = "Mpofu";
+    p2.FirstLast();
 
-    std::cout << p.first << " " << p.last ;
-    std::cout << '\n';
-    std::cout << p2.first << " " << p2.last;
+
 
     return 0;
 }
