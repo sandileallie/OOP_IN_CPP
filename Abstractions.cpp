@@ -19,6 +19,12 @@ class Person{
             first = firstName; // What it does it assign first name to first, but there is a simple was,but you have
                                 // to have the parameter as the same name as the data member
         }
+
+                                    OR
+
+         std::string getName(){
+            return first + " " + last;
+         }
     */
 
         //This is the simple way to create our Mutator

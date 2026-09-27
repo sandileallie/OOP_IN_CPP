@@ -12,13 +12,15 @@ class Person{
         //                 to instantiate means to create a specific, usable object from a general template or class
         //Your constructore need o have the same identifier as your class
 
-        /*Person(std::string firstN, std::string lastN){
+        Person(std::string firstN, std::string lastN){
             this->first = firstN;
             this->last = lastN;
-        } */
-        // Another syntax for a constructore
+        }
+        /* Another syntax for a constructore
+
             Person(std::string firstN, std::string lastN): first(firstN), last(lastN) {}
 
+        */
 
 
         void setFirstName(std::string first){
